@@ -1,17 +1,13 @@
 :root {
     --primary: #ffffff;
-    --secondary: #ff5252;
-    --background: #000000;
-    --highlight: #ffda79;
-    /* Theme color */
-    --theme: var(--primary);
-    --mainColor: #211460;
-    --white: #FFFFFF;
-    --black: #000000;
-  
+    --tombol: #3f2d9c;
+    --font: #000000;
+    --nav: #211460;
+    --blackbtn: #000000;
+    --fontwhit: #ffffff;
 }
 
-.dark-mode {
+.dark {
     transition: 300ms;
     --white : #282828;
     --black : #FFFFFF;
@@ -64,7 +60,7 @@ body {
     font-family: "Raleway", sans-serif;
     font-weight: 300;
     font-optical-sizing: auto;
-    color: #211460;
+    color: var(--nav);
     transition: all 0.3s linear;
 }
 
@@ -219,6 +215,7 @@ input:checked + .slider:before {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    color: var(--font);
 }
 
 .banner-img {
@@ -254,8 +251,8 @@ input:checked + .slider:before {
 
 .banner-btn {
     margin-top: 10px;
-    background-color: #000000;
-    color: white;
+    background-color: var(--blackbtn);
+    color: var(--fontwhit);
     width: 150px;
     height: 30px;
     border-style: none;
@@ -371,7 +368,7 @@ padding-inline: 140px;
 
 .katagori p {
     font-size: small;
-    color: rgb(0, 0, 0);
+    color: var(--font);
     font-family: "Quicksand", serif;
     margin-bottom: 5px;
 }
@@ -408,7 +405,7 @@ padding-inline: 140px;
     font-weight: 300px;
     width: 150px;
     height: 25px;
-    background-color: #211460;
+    background-color: var(--tombol);
     border-radius: 5px;
     color: white;
     border: none;
