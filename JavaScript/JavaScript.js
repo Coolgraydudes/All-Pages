@@ -1,7 +1,18 @@
-<script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
-<script>
-  function addDarkmodeWidget() {
-    new Darkmode().showWidget();
-  }
-  window.addEventListener('load', addDarkmodeWidget);
-</script>
+function submitform() {
+    const surname = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const textarea = document.getElementById('message').value;
+
+    const dataTwo = email && textarea ? true: false ;
+
+    if (surname && dataTwo) {
+          alert("Sent successfully");
+    } else {
+          alert("Please fill out all of the feild");
+    }
+}
+
+function toggleTheme() {
+      var element = ducument.body;
+      element.classList.toggle("dark-mode")
+}
