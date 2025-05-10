@@ -323,14 +323,6 @@ padding-inline: 140px;
  margin-top: 1px;
 }
 
-
-
-
-
-
-
-
-
 /* book */
 
 .banner-b {
@@ -371,6 +363,9 @@ padding-inline: 140px;
     color: var(--font);
     font-family: "Quicksand", serif;
     margin-bottom: 5px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 
